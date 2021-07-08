@@ -28,12 +28,13 @@ class Annyang {
   }
 
   // to predefine the command word(s) you want to say. Once annyang picks up those words, it will trigger the callback corresponding to each command
-  addCommands(showMickey, showDonald, showGoofy) {
+  addCommands(showMickey, showDonald, showGoofy, showBoubou) {
     if (annyang) {
       annyang.addCommands({
         mickey: () => showMickey(),
         donald: () => showDonald(),
         goofy: () => showGoofy(),
+        booboo: () => showBoubou(),
       });
     }
   }

@@ -7,7 +7,7 @@ export class App extends Component {
     super();
     this.state = {
       voiceStatus: "hello",
-      selectedName: "boubou",
+      selectedName: "booboo",
     };
   }
 
@@ -16,7 +16,8 @@ export class App extends Component {
     annyang.addCommands(
       this.showMickey,
       this.showDonald,
-      this.showGoofy
+      this.showGoofy,
+      this.showBoubou
     );
 
     // 2) add callbacks?
@@ -60,6 +61,12 @@ export class App extends Component {
   showGoofy = () => {
     this.setState({
       selectedName: "goofy",
+    });
+  };
+
+  showBoubou = () => {
+    this.setState({
+      selectedName: "booboo",
     });
   };
 
