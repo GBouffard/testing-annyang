@@ -83,11 +83,17 @@ export class App extends Component {
 
         {annyang && (
           <>
-          <div className="App__instructions">Say one of these names</div>
+            <div className="App__instructions">Say one of these names</div>
             <ul>
-              <li>Mickey</li>
-              <li>Donald</li>
-              <li>Goofy</li>
+              <li className={selectedName === "mickey" ? "isSelected" : ""}>
+                Mickey
+              </li>
+              <li className={selectedName === "donald" ? "isSelected" : ""}>
+                Donald
+              </li>
+              <li className={selectedName === "goofy" ? "isSelected" : ""}>
+                Goofy
+              </li>
             </ul>
 
             <img
