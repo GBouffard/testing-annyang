@@ -1,7 +1,8 @@
 import './App.css';
+import annyang from 'annyang'
 
 const App = () => {
-  return <div className="App">Testing Annyang</div>
+  return !annyang ? <div className="App">Speech Recognition is not supported</div> : <div className="App">Testing Annyang</div>
 }
 
 export default App;
