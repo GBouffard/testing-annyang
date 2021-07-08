@@ -1,9 +1,9 @@
 const baseUrl = process.env.PUBLIC_URL;
 
 const imagesUrls = {
-  mickeyMouse: `${baseUrl}/images/mickeyMouse.jp`,
-  donaldDuck: `${baseUrl}/images/donaldDuck.jp`,
-  goofy: `${baseUrl}/images/goofy.jp`,
+  mickeyMouse: `${baseUrl}/images/mickeyMouse.jpg`,
+  donaldDuck: `${baseUrl}/images/donaldDuck.jpg`,
+  goofy: `${baseUrl}/images/goofy.jpg`,
 };
 
-export { imagesUrls };
+export default imagesUrls;

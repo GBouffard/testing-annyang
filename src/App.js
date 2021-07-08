@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import annyang from "./Annyang";
-
+import imagesUrls from "./imagesUrls";
 export class App extends Component {
   constructor() {
     super();
@@ -59,8 +59,18 @@ export class App extends Component {
   render() {
     return (
       <div className="App">
-        {!annyang ? "Speech Recognition is not supported" : "Testing Annyang"}
-        <div>Annyang status: {this.state.voiceStatus.toUpperCase()}</div>
+        {!annyang ? (
+          "Speech Recognition / Annyang is not supported"
+        ) : (
+          <div>
+            <div>Annyang status: {this.state.voiceStatus.toUpperCase()}</div>
+            <img
+              alt="Guillaume logo"
+              className="image"
+              src={imagesUrls.mickeyMouse}
+            />
+          </div>
+        )}
       </div>
     );
   }
