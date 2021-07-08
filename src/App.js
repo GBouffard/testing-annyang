@@ -46,15 +46,21 @@ export class App extends Component {
   };
 
   showMickeyMouse = () => {
-    window.alert("this will show Mickey Mouse");
+    this.setState({
+      selectedName: "mickeyMouse",
+    });
   };
 
   showDonaldDuck = () => {
-    window.alert("this will show Donald Duck");
+    this.setState({
+      selectedName: "donaldDuck",
+    });
   };
 
   showGoofy = () => {
-    window.alert("this will show Goofy");
+    this.setState({
+      selectedName: "goofy",
+    });
   };
 
   render() {
@@ -70,6 +76,7 @@ export class App extends Component {
 
         {annyang && (
           <>
+          <div className="App__instructions">Say one of these names</div>
             <ul>
               <li>Mickey Mouse</li>
               <li>Donald Duck</li>
