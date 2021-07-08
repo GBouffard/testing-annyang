@@ -17,6 +17,16 @@ body {
 }
 
 .App {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: bolder;
+}
+
+.App__annyang-status {
+  font-size: 24px;
+  text-align: center;
+}
+
+.image {
+  margin: 10px;
+  border: 3px solid black;
 }

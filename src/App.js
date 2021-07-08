@@ -7,7 +7,7 @@ export class App extends Component {
     super();
     this.state = {
       voiceStatus: "hello",
-      selectedName: 'boubou'
+      selectedName: "boubou",
     };
   }
 
@@ -58,21 +58,30 @@ export class App extends Component {
   };
 
   render() {
-    const { voiceStatus, selectedName} = this.state;
+    const { voiceStatus, selectedName } = this.state;
 
     return (
       <div className="App">
-        {!annyang ? (
-          "Speech Recognition / Annyang is not supported"
-        ) : (
-          <div>
-            <div>Annyang status: {voiceStatus.toUpperCase()}</div>
+        <div className="App__annyang-status">
+          {!annyang
+            ? "Speech Recognition / Annyang is not supported"
+            : `Annyang is ${voiceStatus}!!`}
+        </div>
+
+        {annyang && (
+          <>
+            <ul>
+              <li>Mickey Mouse</li>
+              <li>Donald Duck</li>
+              <li>Goofy</li>
+            </ul>
+
             <img
               alt="Guillaume logo"
               className="image"
               src={imagesUrls[selectedName]}
             />
-          </div>
+          </>
         )}
       </div>
     );
