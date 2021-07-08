@@ -14,8 +14,8 @@ export class App extends Component {
   componentDidMount() {
     // 1) bind with predefined words/commands on mount
     annyang.addCommands(
-      this.showMickeyMouse,
-      this.showDonaldDuck,
+      this.showMickey,
+      this.showDonald,
       this.showGoofy
     );
 
@@ -45,15 +45,15 @@ export class App extends Component {
     // Match voice input with player commands
   };
 
-  showMickeyMouse = () => {
+  showMickey = () => {
     this.setState({
-      selectedName: "mickeyMouse",
+      selectedName: "mickey",
     });
   };
 
-  showDonaldDuck = () => {
+  showDonald = () => {
     this.setState({
-      selectedName: "donaldDuck",
+      selectedName: "donald",
     });
   };
 
@@ -78,8 +78,8 @@ export class App extends Component {
           <>
           <div className="App__instructions">Say one of these names</div>
             <ul>
-              <li>Mickey Mouse</li>
-              <li>Donald Duck</li>
+              <li>Mickey</li>
+              <li>Donald</li>
               <li>Goofy</li>
             </ul>
 

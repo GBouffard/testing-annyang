@@ -2,8 +2,8 @@ const baseUrl = process.env.PUBLIC_URL;
 
 const imagesUrls = {
   boubou: `${baseUrl}/images/boubou.jpg`,
-  mickeyMouse: `${baseUrl}/images/mickeyMouse.jpg`,
-  donaldDuck: `${baseUrl}/images/donaldDuck.jpg`,
+  mickey: `${baseUrl}/images/mickey.jpg`,
+  donald: `${baseUrl}/images/donald.jpg`,
   goofy: `${baseUrl}/images/goofy.jpg`,
 };
 
