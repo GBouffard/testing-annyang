@@ -1,4 +1,4 @@
-# :lips: Testing Annyang :lips:
+# :microphone: Testing Annyang :microphone:
 
 I learnt about Annyang at a conference so made a small repo with `create-react-app` to try it.
 It works! It's awesome.
